@@ -3,7 +3,7 @@
   publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
 
 # Next.js configuration for Netlify
 # The @netlify/plugin-nextjs automatically handles routing and API routes
