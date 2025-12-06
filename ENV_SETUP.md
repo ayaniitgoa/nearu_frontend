@@ -42,3 +42,4 @@ When deploying to production (Vercel, Netlify, etc.), add these environment vari
 3. Add each variable with its value
 4. Redeploy your application
 
+
