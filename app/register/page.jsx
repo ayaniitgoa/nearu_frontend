@@ -54,10 +54,16 @@ function RegisterForm() {
     setLoading(true);
 
     try {
+      // Get the current origin for redirect URL
+      const redirectTo = `${window.location.origin}/auth/callback?next=${
+        userType === 'institution' ? '/dashboard' : '/home'
+      }`;
+
       const { data, error: signUpError } = await supabase.auth.signUp({
         email: formData.email,
         password: formData.password,
         options: {
+          emailRedirectTo: redirectTo,
           data: {
             user_type: userType,
             name: formData.name,
