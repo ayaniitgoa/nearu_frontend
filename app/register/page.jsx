@@ -84,7 +84,7 @@ function RegisterForm() {
   };
 
   return (
-    <div className="h-screen flex bg-white overflow-hidden">
+    <div className="min-h-screen flex flex-col lg:flex-row bg-white overflow-y-auto">
       {/* Left Side - Branding */}
       <div className="hidden lg:flex lg:w-1/2 items-center justify-center p-12 relative bg-gradient-to-br from-[#970747]/5 to-white">
         {/* Decorative Elements */}
@@ -132,7 +132,7 @@ function RegisterForm() {
       </div>
 
       {/* Right Side - Form */}
-      <div className="flex-1 lg:w-1/2 flex items-center justify-center p-6 lg:p-12">
+      <div className="flex-1 lg:w-1/2 flex items-center justify-center p-6 lg:p-12 py-8">
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}

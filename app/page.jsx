@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function LandingPage() {
   return (
-    <div className="h-screen flex flex-col bg-white overflow-hidden">
+    <div className="min-h-screen flex flex-col bg-white overflow-y-auto">
       {/* Main Content - Centered */}
       <div className="flex-1 flex items-center justify-center p-6 relative">
         {/* Decorative Background Elements */}
